@@ -40,16 +40,16 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
+  # small: /images/favicon-16x16-next.png
+  medium: /images/blog_icon_32.png
+  # apple_touch_icon: /images/apple-touch-icon-next.png
+  # safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  #since: 2015
+  since: 2019
 
   # Icon between year and copyright info.
   icon:
@@ -66,13 +66,13 @@ footer:
 
   powered:
     # Hexo link (Powered by Hexo).
-    enable: true
+    enable: false
     # Version info of Hexo after Hexo link (vX.X.X).
     version: true
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
+    enable: false
     # Version info of NexT after scheme info (vX.X.X).
     version: true
 
@@ -95,7 +95,7 @@ footer:
 creative_commons:
   license: by-nc-sa
   sidebar: false
-  post: false
+  post: true
   language:
 
 
@@ -104,9 +104,9 @@ creative_commons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+# scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 #scheme: Gemini
 
 # Dark Mode
@@ -125,8 +125,8 @@ darkmode: false
 menu:
   home: / || home
   #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -170,11 +170,11 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /images/avatar.gif
   # If true, the avatar will be dispalyed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
-  rotated: false
+  rotated: true
 
 # Posts / Categories / Tags in sidebar.
 site_state: true
@@ -184,8 +184,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+  GitHub: https://github.com/JNhua || github
+  E-Mail: mailto:hjntc59@qq.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -203,12 +203,13 @@ social_icons:
 # Blog rolls
 links_settings:
   icon: link
-  title: Links
+  title: 友站
   # Available values: block | inline
   layout: block
 
 links:
   #Title: http://yoursite.com
+  Chanson's blog: https://chansonchan.cn/
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
@@ -270,13 +271,14 @@ tag_icon: false
 # Front-matter variable (unsupport animation).
 reward_settings:
   # If true, reward will be displayed in every article by default.
-  enable: false
+  enable: true
   animation: false
   #comment: Donate comment here.
+  comment: 点击下方打赏按钮，获得支付宝二维码
 
 reward:
   #wechatpay: /images/wechatpay.png
-  #alipay: /images/alipay.png
+  alipay: /images/alipay.jpg
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
@@ -369,11 +371,11 @@ codeblock:
   highlight_theme: normal
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result.
-    show_result: false
+    show_result: true
     # Available values: default | flat | mac
-    style:
+    style: default
 
 back2top:
   enable: true
@@ -402,7 +404,7 @@ bookmark:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: false
-  permalink: https://github.com/yourname
+  permalink: https://github.com/JNhua
   title: Follow me on GitHub
 
 
@@ -498,7 +500,7 @@ yandex_site_verification:
 baidu_site_verification:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: false
+baidu_push: true
 
 
 # ---------------------------------------------------------------
@@ -519,7 +521,7 @@ math:
 
   # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
   mathjax:
-    enable: false
+    enable: true
     # See: https://mhchem.github.io/MathJax-mhchem/
     mhchem: false
 
@@ -628,9 +630,9 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false
-  appid: # Your leancloud application appid
-  appkey: # Your leancloud application appkey
+  enable: true
+  appid: ayR41aIDOEphaIn5j9h6ckuM-gzGzoHsz
+  appkey: bcvUWLaLiqyVgwTmRHg8Gy4K
   notify: false # Mail notifier
   verify: false # Verification code
   placeholder: Just go go # Comment box placeholder
@@ -694,7 +696,7 @@ google_analytics:
   only_pageview: false
 
 # Baidu Analytics
-baidu_analytics: # <app_id>
+baidu_analytics: d4cbb87c6c53e0060fed433f599be5a0
 
 # Growingio Analytics
 growingio_analytics: # <project_id>
@@ -728,7 +730,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
-  enable: false
+  enable: true
   total_visitors: true
   total_visitors_icon: user
   total_views: true
@@ -756,7 +758,7 @@ algolia_search:
 # Local Search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # If auto, trigger search by changing input.
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto
@@ -1035,3 +1037,9 @@ vendors:
 css: css
 js: js
 images: images
+
+# cursor effect
+cursor_effect:
+  enabled: true
+  type: explosion  # fireworks：礼花 | explosion：爆炸 | love：浮出爱心 | text：浮出文字
+  follow: false
