@@ -1005,9 +1005,3 @@ vendors:
 css: css
 js: js
 images: images
-
-# cursor effect
-cursor_effect:
-  enabled: true
-  type: explosion  # fireworks：礼花 | explosion：爆炸 | love：浮出爱心 | text：浮出文字
-  follow: false
